@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checked</title>
+    <style>
+        :checked + span{
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border: medium solid black;
+        }
+        :default{
+            border: medium solid red;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="http://baidu.com">
+    <p>
+        <label for="apples">Do you like apples:</label>
+        <input type="checkbox" id="apples" name="apples">
+        <span>This will go red when checked</span>
+    </p>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

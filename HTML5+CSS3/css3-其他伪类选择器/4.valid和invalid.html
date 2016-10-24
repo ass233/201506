@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>valid和invalid</title>
+    <style>
+        input:invalid{
+            outline: medium solid red;
+        }
+        input:valid{
+            outline: medium solid green;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="">
+    <p>
+        <label for="name">Name:<input required id="name" name="name"></label>
+    </p>
+
+    <p>
+        <label for="name">City:<input required id="city" name="city"></label>
+    </p>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

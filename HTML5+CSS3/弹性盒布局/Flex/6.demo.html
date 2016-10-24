@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <style>
+        .boxcontainer{
+            display: box;
+            display: -moz-box;
+            display: -webkit-box;
+            border: 1px solid red;
+            height: 32px;
+            min-width: 100px
+        }
+        .boxcontainer>div{
+            box-flex: 1;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1
+        }
+        .boxcontainer>div>input{
+            min-width: 50px;
+            width: 100%;
+            box-sizing: border-box;
+            height: 32px;
+            border: 0;
+        }
+        .boxcontainer>a{
+            min-width: 50px;
+            display: inline-block;
+            border: 1px solid red;
+            height: 32px;
+            line-height: 28px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="boxcontainer">
+    <div>
+        <input type="text" id="" value="" />
+    </div>
+    <a href="javsscript:;">搜索</a>
+
+</div>
+
+</body>
+</html>

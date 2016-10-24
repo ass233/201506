@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checked</title>
+    <style>
+        :checked+span{
+            background: red;
+            color: white;
+            padding: 5px;
+            border:medium solid black;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="checked.html">
+    <p>
+        <label for="apples">Do you like apples:</label>
+        <input type="checkbox" id="apples" name="apples">
+        <span>This will go red when checked</span>
+        <span>This will go red when checked</span>
+        <span>This will go red when checked</span>
+        <input type="checkbox" id="apples" name="apples">
+        <span>This will go red when checked</span>
+    </p>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>

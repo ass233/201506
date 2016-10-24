@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in-range和out-range</title>
+    <style>
+        :in-range{
+            outline: medium solid green;
+        }
+        :out-of-range{
+            outline: medium solid red;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <form method="post" action="">
+        <p>
+            <label for="price">
+                $per unit in your area：
+                <input type="number" min="0" max="10" value="1" id="price" name="price">
+            </label>
+        </p>
+        <input type="submit" value="Submit">
+    </form>
+</form>
+</body>
+</html>
